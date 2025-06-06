@@ -1,0 +1,21 @@
+# STM32CubeIDE specific files
+/.settings/
+/Debug/
+/Release/
+/*.launch
+/*.log
+/*.bin
+/*.elf
+/*.hex
+/*.map
+/*.srec
+/*.d
+/*.o
+/*.lst
+/*.su
+/*.dep
+/*.a
+/*.lib
+/*.pyc
+/.metadata/
+/*.bak

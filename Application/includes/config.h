@@ -1,0 +1,57 @@
+/*
+ * config.h
+ *
+ *  Created on: Feb 25, 2025
+ *  Author: Lars Andre Landås (landas@gmail.com)
+ *
+ *  config.h is the board configuration stored
+ *  in flash memory.
+ */
+
+#ifndef INC_CONFIG_H_
+#define INC_CONFIG_H_
+
+#include <stdint.h>
+
+#define ADIN1110_MAC_0 0x02
+#define ADIN1110_MAC_1 0xE0
+#define ADIN1110_MAC_2 0x22
+#define ADIN1110_MAC_3 0xFE
+#define ADIN1110_MAC_4 0xDA
+#define ADIN1110_MAC_5 0xD1
+
+#define ADIN1110_DHCP_ENABLED 0
+
+#define ADIN1110_DEFAUL_IP_0 10
+#define ADIN1110_DEFAUL_IP_1 100
+#define ADIN1110_DEFAUL_IP_2 100
+#define ADIN1110_DEFAUL_IP_3 115
+
+#define ADIN1110_DEFAUL_NETMASK_0 255
+#define ADIN1110_DEFAUL_NETMASK_1 255
+#define ADIN1110_DEFAUL_NETMASK_2 255
+#define ADIN1110_DEFAUL_NETMASK_3 0
+
+#define ADIN1110_DEFAUL_GW_0 10
+#define ADIN1110_DEFAUL_GW_1 100
+#define ADIN1110_DEFAUL_GW_2 100
+#define ADIN1110_DEFAUL_GW_3 1
+
+#define ADIN1110_GPIO_RESET_PORT	3
+#define ADIN1110_GPIO_RESET_PIN		7
+#define ADIN1110_SPI_DEVICE_ID		1
+#define ADIN1110_SPI_CS				3
+#define ADIN1110_SPI_CS_PORT		0
+
+#define FLASH_ADDRESS_CONFIG  (0x08100000UL)
+#define FLASH_ADDRESS_CONFIG1 (0x08110000UL)
+#define FLASH_ADDRESS_CONFIG2 (0x08120000UL)
+
+
+#define MODBUS_IP "0.0.0.0"
+#define MODBUS_PORT 502
+#define MODBUS_MAX_CLIENTS 5
+
+#define NETWORK_TASK_INTERVAL_MS 10
+
+#endif /* INC_CONFIG_H_ */
