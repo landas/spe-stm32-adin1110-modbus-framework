@@ -7,8 +7,13 @@ This is a **STM32CubeIDE** project that includes a modular framework supporting:
 - **ADIN1110** Ethernet transceiver (using the no-OS driver)  
 - **Modbus TCP/IP server** (via [micro-modbus](https://github.com/landas/micro-modbus))
 
-> The framework requires approximately 160 kB of flash memory.  
-> It should be relatively straightforward to adapt the project to other STM32 microcontrollers.
+The framework requires approximately 160 kB of flash memory.  
+It should be relatively straightforward to adapt the project to other STM32 microcontrollers.
+
+## Block Diagram
+
+<img src="Docs/block-diagram.png" alt="Block Diagram" style="width: 500px;">
+
 
 ## ADIN1110 Device Driver
 
@@ -24,7 +29,7 @@ This project uses a **generic SPI interface** to communicate with the **ADIN1110
 | CS     | PA3 |
 | RESET  | PD7 |
 
-> These pin assignments may need to be updated in both the source code (`config.h`) and the STM32CubeIDE **Pinout & Configuration** tool.
+These pin assignments may need to be updated in both the source code ([config.h](Application/includes/config.h)) and the STM32CubeIDE **Pinout & Configuration** tool.
 
 ### Driver Notes
 
@@ -41,4 +46,4 @@ The project uses the lightweight and efficient **[micro-modbus](https://github.c
 
 This project originated as part of a **bachelor thesis in electrical automation** at **USN Vestfold**, Spring 2025.
 
-> **Note:** I am unable to provide support for this project, but I hope it serves as a helpful reference for others working on similar applications.
+**Note:** I am unable to provide support for this project, but I hope it serves as a helpful reference for others working on similar applications.
